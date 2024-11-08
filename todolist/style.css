@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  width: 600px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 16px;
+
+  position: absolute;
+  left: 50%;
+  top: 40%;
+
+  transform: translateX(-50%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px dashed #333;
+}
+
+.header h3 {
+  font-size: 1.5rem;
+}
+
+.theme-group i {
+  font-size: 1.5rem;
+}
+
+.toggle-btn {
+  width: 60px;
+  height: 30px;
+  background-color: yellowgreen;
+  border-radius: 20px;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.toggle-btn .toggle {
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 10%;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  display: block;
+}
+
+.form-group {
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  border-bottom: 1px solid steelblue;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.list-group{
+ margin-top: 36px;
+}
+
+.list-group ul li {
+ background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.list-group ul li.completed{
+ text-decoration: line-through;
+}
+
+.list-group ul li.completed::after{
+ content: 'done';
+ float: right;
+ color: green;
+}
+
+.footer{
+ margin-top: 20px;
+ display: flex;
+ justify-content: space-between;
+}
+
+.footer .btn-group a{
+ padding: 0 8px;
+ border-right: 2px solid steelblue;
+ color: #000;
+ cursor: pointer;
+}
+
+.footer .btn-group a.active{
+ color: blue;
+ font-weight: bold;
+}
+
+.footer .btn-group a:nth-child(3){
+ border-right: none;
+}
+
